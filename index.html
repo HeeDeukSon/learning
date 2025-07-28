@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>10 Day Language Journey: Unlock Your Language Potential!</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <!-- EmailJS SDK -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <!-- ADD THESE LINES HERE -->
+    <meta property="og:title" content="10 Day Language Journey: Unlock Your Language Potential!">
+    <meta property="og:description" content="Ignite your initial spark and master consistent pronunciation for fluency.">
+    <meta property="og:image" content="https://heedeukson.github.io/learning/assets/images/preview-image.jpg">
+    <meta property="og:url" content="https://heedeukson.github.io/learning/">
+    <meta property="og:type" content="website">
+</head>
+<body class="antialiased">
+
+    <!-- Header -->
+    <header class="bg-white shadow-md p-4 sticky top-0 z-50 rounded-b-lg">
+        <nav class="container mx-auto flex justify-between items-center">
+            <a href="#" class="text-2xl font-bold text-blue-700">10 Day Language Journey</a>
+            <div class="hidden md:flex space-x-6">
+                <a href="#home" class="text-gray-700 hover:text-blue-700 font-medium">Home</a>
+                <a href="#about" class="text-gray-700 hover:text-blue-700 font-medium">My Language Journey</a>
+                <a href="#doctrine" class="text-gray-700 hover:text-blue-700 font-medium">Our Doctrine</a>
+                <a href="#programs" class="text-gray-700 hover:text-blue-700 font-medium">Programs</a>
+                <a href="#testimonials" class="text-gray-700 hover:text-blue-700 font-medium">Testimonials</a>
+                <a href="#contact" class="text-gray-700 hover:text-blue-700 font-medium">Contact</a>
+            </div>
+            <button id="mobile-menu-button" class="md:hidden text-gray-700 focus:outline-none">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
+            </button>
+        </nav>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden mt-4 space-y-2">
+            <a href="#home" class="block text-gray-700 hover:text-blue-700 font-medium px-4 py-2">Home</a>
+            <a href="#about" class="block text-gray-700 hover:text-blue-700 font-medium px-4 py-2">My Language Journey</a>
+            <a href="#doctrine" class="block text-gray-700 hover:text-blue-700 font-medium px-4 py-2">Our Doctrine</a>
+            <a href="#programs" class="block text-gray-700 hover:text-blue-700 font-medium px-4 py-2">Programs</a>
+            <a href="#testimonials" class="block text-gray-700 hover:text-blue-700 font-medium px-4 py-2">Testimonials</a>
+            <a href="#contact" class="block text-gray-700 hover:text-blue-700 font-medium px-4 py-2">Contact</a>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-section rounded-b-lg shadow-lg">
+        <div class="container mx-auto px-4">
+            <h1 class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold mb-4 leading-tight">
+                10 Day Language Journey: <br> Unlock Your Language Potential!
+            </h1>
+            <p class="text-xl md:text-2xl mb-8 max-w-2xl mx-auto">
+                Ignite your initial spark and master consistent pronunciation for fluency.
+            </p>
+            <div class="mb-8">
+                <div class="video-responsive max-w-4xl mx-auto rounded-lg shadow-xl">
+                    <iframe src="https://www.youtube.com/embed/XpY_BdyXYP0?t=30"
+                            frameborder="0"
+                            allow="autoplay; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen
+                            class="w-full h-full">
+                    </iframe>
+                </div>
+                <p class="text-sm mt-2 text-gray-300">Click to hear my language learning philosophy!</p>
+            </div>
+            <a href="#programs" class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-8 rounded-full text-lg shadow-lg transition duration-300 ease-in-out transform hover:scale-105">
+                Start Your 10 Day Journey
+            </a>
+        </div>
+    </section>
+
+    <!-- Why 10 Day Journey Section -->
+    <section class="py-16 bg-white rounded-lg shadow-md mx-4 md:mx-auto max-w-6xl mt-8 px-4">
+        <div class="container mx-auto text-center">
+            <h2 class="section-title">Why the 10 Day Language Journey?</h2>
+            <div class="mt-12 grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="card bg-gray-50 p-6 rounded-xl shadow-md border border-gray-200">
+                    <div class="text-5xl mb-4 text-blue-500">✨</div>
+                    <h3 class="text-xl font-semibold mb-3 text-gray-800">Ignite Your Spark</h3>
+                    <p class="text-gray-600">A focused 10-day program to spark your interest and build confidence in language learning.</p>
+                </div>
+                <div class="card bg-gray-50 p-6 rounded-xl shadow-md border border-gray-200">
+                    <div class="text-5xl mb-4 text-blue-500">🗣️</div>
+                    <h3 class="text-xl font-semibold mb-3 text-gray-800">Master Pronunciation</h3>
+                    <p class="text-gray-600">Refine your pronunciation through targeted practice for natural and fluent speech.</p>
+                </div>
+                <div class="card bg-gray-50 p-6 rounded-xl shadow-md border border-gray-200">
+                    <div class="text-5xl mb-4 text-blue-500">💬</div>
+                    <h3 class="text-xl font-semibold mb-3 text-gray-800">Real-World Conversation</h3>
+                    <p class="text-gray-600">Maximize practical communication skills with AI-powered practice using NotebookLM and 1:1 sessions.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Me Section Summary -->
+    <section id="about" class="py-16 bg-gray-100 rounded-lg shadow-md mx-4 md:mx-auto max-w-6xl mt-8 px-4">
+        <div class="container mx-auto text-center">
+            <h2 class="section-title">My Language Journey</h2>
+            <div class="md:flex items-center mt-12 text-left">
+                <div class="md:w-1/3 mb-8 md:mb-0 md:mr-8 flex justify-center">
+                    <img src="assets/images/John.jpg" alt="Your Profile Picture" class="rounded-full shadow-lg border-4 border-white w-64 h-64 object-cover">
+                </div>
+                <div class="md:w-2/3">
+                    <p class="text-lg mb-4 text-gray-700 leading-relaxed">
+                        Hi, and welcome to my website.
+                    </p>
+                    <p class="text-lg mb-4 text-gray-700 leading-relaxed">
+                        I believe learning a language is not a straight line. It's a <span class="font-semibold text-blue-600">zigzag journey</span>—shaped by trial and error, curiosity, and hands-on experience.
+                    </p>
+                    <p class="text-lg mb-4 text-gray-700 leading-relaxed">
+                        As someone who worked in the <span class="font-semibold text-blue-600">Medical Equipment industry</span>, I know that many engineers already have the skills—they just need the <span class="font-semibold text-blue-600">right context</span> to express them in English.
+                    </p>
+                    <p class="text-lg mb-4 text-gray-700 leading-relaxed">
+                        Because I know engineers love a <span class="font-semibold text-blue-600">hands-on approach</span>, all my content is developed from the <span class="font-semibold text-blue-600">authentic, real-world materials</span> I've gathered to provide that practical context.
+                    </p>
+                    <p class="text-lg mb-4 text-gray-700 leading-relaxed">
+                        My journey began with <span class="font-semibold text-blue-600">two and a half years in Canada</span>, followed by years of working in a global company. I communicated frequently with teams from <span class="font-semibold text-blue-600">the US, Japan, Germany, Singapore, and China</span>, solving real technical problems in English.
+                    </p>
+                    <p class="text-lg mb-4 text-gray-700 leading-relaxed">
+                        Now, I help other professionals—especially <span class="font-semibold text-blue-600">engineers and technical experts</span>—to build confidence, use their <span class="font-semibold text-blue-600">own experience</span>, and express their thoughts clearly in English.
+                    </p>
+                    <p class="text-lg mb-4 text-gray-700 leading-relaxed">
+                        Whether you're preparing for global teamwork, presentations, or interviews, I'm here to help you make the most of <span class="font-semibold text-blue-600">what you already know</span>.
+                    </p>
+                    <p class="text-lg mb-6 text-gray-700 leading-relaxed">
+                        Let's turn your experience into <span class="font-semibold text-blue-600">real communication power</span>.
+                    </p>
+                    <p class="text-lg mb-4 text-gray-700 leading-relaxed font-medium">
+                        Thanks for being here. Let's start the journey together.
+                    </p>
+                    <a href="#programs" class="inline-block mt-6 bg-blue-500 hover:bg-blue-600 text-white font-bold py-3 px-8 rounded-full shadow-md transition duration-300 ease-in-out transform hover:scale-105">
+                        Start Your Journey
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- My Language Learning Doctrine Section -->
+    <section id="doctrine" class="py-16 bg-white rounded-lg shadow-md mx-4 md:mx-auto max-w-6xl mt-8 px-4">
+        <div class="container mx-auto text-center">
+            <h2 class="section-title">The Language Learning Doctrine: 9 Principles</h2>
+            <p class="text-xl text-gray-600 mb-12">
+                Adapted from David Heinemeier Hansson's "The Rails Doctrine"
+            </p>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 text-left">
+                <div class="p-6 rounded-xl border border-gray-200 bg-gray-50 shadow-sm">
+                    <h3 class="text-xl font-semibold mb-2 text-blue-700">1. Optimize for Learner Enjoyment.</h3>
+                    <p class="text-gray-700">We prioritize making language learners genuinely enjoy the process, rather than solely optimizing for speed or perfect grammar. Joy fuels consistent progress.</p>
+                </div>
+                <div class="p-6 rounded-xl border border-gray-200 bg-gray-50 shadow-sm">
+                    <h3 class="text-xl font-semibold mb-2 text-blue-700">2. Convention Over Customization.</h3>
+                    <p class="text-gray-700">We advocate for sensible, common learning paths and resources, reducing the need for constant manual setup or endless searching for the "perfect" method.</p>
+                </div>
+                <div class="p-6 rounded-xl border border-gray-200 bg-gray-50 shadow-sm">
+                    <h3 class="text-xl font-semibold mb-2 text-blue-700">3. The Curriculum is Omakase.</h3>
+                    <p class="text-gray-700">We provide curated, opinionated learning choices, freeing learners from being overwhelmed by endless options and guiding them effectively.</p>
+                </div>
+                <div class="p-6 rounded-xl border border-gray-200 bg-gray-50 shadow-sm">
+                    <h3 class="text-xl font-semibold mb-2 text-blue-700">4. No One Methodology.</h3>
+                    <p class="text-gray-700">We embrace multiple learning approaches—be it immersion, grammar study, or speaking practice—instead of dogmatically adhering to just one. Flexibility is key.</p>
+                </div>
+                <div class="p-6 rounded-xl border border-gray-200 bg-gray-50 shadow-sm">
+                    <h3 class="text-xl font-semibold mb-2 text-blue-700">5. Exalt Beautiful Communication.</h3>
+                    <p class="text-gray-700">We value clear, elegant expression that treats language as an art form, encouraging learners to communicate effectively and gracefully.</p>
+                </div>
+                <div class="p-6 rounded-xl border border-gray-200 bg-gray-50 shadow-sm">
+                    <h3 class="text-xl font-semibold mb-2 text-blue-700">6. Provide Sharp Tools and Optimized Input.</h3>
+                    <p class="text-700">We offer powerful learning tools, focusing on those that deliver comprehensible and compelling input (and opportunities for compelling output), even if they can be misused.</p>
+                </div>
+                <div class="p-6 rounded-xl border border-gray-200 bg-gray-50 shadow-sm">
+                    <h3 class="text-xl font-semibold mb-2 text-blue-700">7. Value Integrated Systems and Authentic Experiences.</h3>
+                    <p class="text-gray-700">We favor holistic approaches where different skills (reading, writing, listening, speaking) and resources work together seamlessly, actively incorporating authentic, real-life materials and experiences into the learning journey.</p>
+                </div>
+                <div class="p-6 rounded-xl border border-gray-200 bg-gray-50 shadow-sm">
+                    <h3 class="text-xl font-semibold mb-2 text-blue-700">8. Progress Over Absolute Perfection.</h3>
+                    <p class="text-gray-700">We prioritize continuous improvement and effective communication over achieving flawless grammar or accent immediately. Every step forward is a victory.</p>
+                </div>
+                <div class="p-6 rounded-xl border border-gray-200 bg-gray-50 shadow-sm">
+                    <h3 class="text-xl font-semibold mb-2 text-blue-700">9. Push Up a Big Tent.</h3>
+                    <p class="text-gray-700">We welcome diverse learners and learning styles, embracing all motivations for language acquisition, not just academic elites or those aiming for native fluency. Everyone is welcome.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Programs Section -->
+    <section id="programs" class="py-16 bg-white rounded-lg shadow-md mx-4 md:mx-auto max-w-6xl mt-8 px-4">
+        <div class="container mx-auto text-center">
+            <h2 class="section-title">10 Day Language Journey Programs</h2>
+            <p class="text-xl text-gray-600 mb-12">
+                An immersive 10-day learning experience combining engaging topics, focused pronunciation practice, and real-world conversation with AI support.
+            </p>
+            <div class="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-3 gap-8">
+                
+                <!-- Program Card 1: AI-Assisted Self-Paced Learning -->
+                <div class="card bg-gray-50 p-6 rounded-xl shadow-md border border-gray-200 text-left">
+                    <h3 class="text-2xl font-semibold mb-4 text-blue-700">AI-Assisted Self-Paced Learning</h3>
+                    <p class="text-lg font-medium mb-3 text-gray-800">(Self-Training)</p>
+                    <p class="text-gray-600 mb-4">
+                        Develop strong self-directed English skills to effectively express yourself. Master <span class="font-semibold">basic phrasal verbs</span> and <span class="font-semibold">practical expressions</span> through engaging with AI designed to boost natural usage.
+                    </p>
+                    <div class="mb-4">
+                        <p class="font-semibold text-gray-800 mb-2">Program Modules:</p>
+                        <ul class="list-disc list-inside text-gray-600 space-y-1">
+                            <li><strong>Module 1:</strong> Conversational AI Practice</li>
+                            <li><strong>Module 2:</strong> Leveraging AI Tools (e.g., NotebookLM, PowerPoint)</li>
+                            <li><strong>Module 3:</strong> Immersive Media Engagement (e.g., "KPOP Demon Hunters")</li>
+                        </ul>
+                    </div>
+                    <div class="bg-blue-50 p-3 rounded-lg mb-4">
+                        <p class="text-sm text-blue-800">
+                            <span class="font-bold">▶</span> Increase your daily English usage.<br>
+                            <span class="font-bold">▶</span> Ignite curiosity for English literature and diverse content.
+                        </p>
+                    </div>
+                    <a href="programs/AI01.html" class="inline-block mt-4 text-blue-500 hover:text-blue-700 font-semibold">Learn More &rarr;</a>
+                </div>
+
+                <!-- Program Card 2: Communication Immersion -->
+                <div class="card bg-gray-50 p-6 rounded-xl shadow-md border border-gray-200 text-left">
+                    <h3 class="text-2xl font-semibold mb-4 text-blue-700">Communication Immersion</h3>
+                    <p class="text-lg font-medium mb-3 text-gray-800">(Small Group)</p>
+                    <p class="text-gray-600 mb-4">
+                        Build fluency through focused expressions and immersive reading practice. Master <span class="font-semibold">essential phrasal verbs</span> and <span class="font-semibold">practical expressions</span> through engaging content designed to improve comprehension and boost natural usage.
+                    </p>
+                    <div class="mb-4">
+                        <p class="font-semibold text-gray-800 mb-2">Program Modules:</p>
+                        <ul class="list-disc list-inside text-gray-600 space-y-1">
+                            <li><strong>Module 1:</strong> 100 Essential Everyday Expressions</li>
+                            <li><strong>Module 2:</strong> 100 Intermediate Expressions for Real-Life Communication</li>
+                            <li><strong>Module 3:</strong> Common Phrasal Verbs in Context</li>
+                        </ul>
+                    </div>
+                    <div class="bg-blue-50 p-3 rounded-lg mb-4">
+                        <p class="text-sm text-blue-800">
+                            <span class="font-bold">▶</span> Practice basic conversation using reading materials.<br>
+                            <span class="font-bold">▶</span> Expand vocabulary and speaking confidence through virtual discussions.
+                        </p>
+                    </div>
+                    <a href="programs/Com01.html" class="inline-block mt-4 text-blue-500 hover:text-blue-700 font-semibold">Learn More &rarr;</a>
+                </div>
+
+                <!-- Program Card 3: Lecture & Debate Program -->
+                <div class="card bg-gray-50 p-6 rounded-xl shadow-md border border-gray-200 text-left">
+                    <h3 class="text-2xl font-semibold mb-4 text-blue-700">Lecture & Debate Program</h3>
+                    <p class="text-lg font-medium mb-3 text-gray-800">(Advanced Lectures)</p>
+                    <p class="text-gray-600 mb-4">
+                        Develop deeper language awareness through structured reading and thoughtful conversation. Enhance your <span class="font-semibold">vocabulary, logical expression, and argument-building skills</span> by reading and discussing insightful, real-world topics.
+                    </p>
+                    <div class="mb-4">
+                        <p class="font-semibold text-gray-800 mb-2">Program Modules:</p>
+                        <ul class="list-disc list-inside text-gray-600 space-y-1">
+                            <li><strong>Module 1:</strong> "Rework" – Rethinking Productivity</li>
+                            <li><strong>Module 2:</strong> "Getting Real" – Smart, Fast, and Effective Web Development</li>
+                            <li><strong>Module 3:</strong> "It Doesn't Have to Be Crazy at Work" – Sustainable Work Culture</li>
+                        </ul>
+                    </div>
+                    <div class="bg-blue-50 p-3 rounded-lg mb-4">
+                        <p class="text-sm text-blue-800">
+                            <span class="font-bold">▶</span> Read, reflect, and debate with others.<br>
+                            <span class="font-bold">▶</span> Improve your ability to explain ideas clearly in English.
+                        </p>
+                    </div>
+                    <a href="programs/Lec01.html" class="inline-block mt-4 text-blue-500 hover:text-blue-700 font-semibold">Learn More &rarr;</a>
+                </div>
+            </div>
+            
+            <!-- Korean Language Journey section remains the same -->
+            <div class="mt-12 p-6 bg-blue-50 border border-blue-200 rounded-xl shadow-inner text-blue-800">
+                <h3 class="text-xl font-semibold mb-3">Korean Language Journey (Future Expansion)</h3>
+                <p class="text-lg">
+                    Programs for foreign learners interested in basic Korean conversation and culture are also in preparation. Leveraging my multicultural communication experience, I aim to provide an engaging and effective Korean learning experience.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="py-16 bg-gray-100 rounded-lg shadow-md mx-4 md:mx-auto max-w-6xl mt-8 px-4">
+        <div class="container mx-auto text-center">
+            <h2 class="section-title">Learner Testimonials</h2>
+            <div class="mt-12 grid grid-cols-1 md:grid-cols-2 gap-8">
+                <!-- Testimonial 1 -->
+                <div class="card bg-white p-6 rounded-xl shadow-md border border-gray-200">
+                    <p class="text-gray-700 italic mb-4">"Thanks to [Your Name], I gained so much confidence in my English pronunciation! It's amazing how much I improved in just 10 days. Practicing with NotebookLM beforehand and then talking with [Your Name] really boosted my skills."</p>
+                    <p class="font-semibold text-blue-600">- Minjun Kim (Office Worker)</p>
+                </div>
+                <!-- Testimonial 2 -->
+                <div class="card bg-white p-6 rounded-xl shadow-md border border-gray-200">
+                    <p class="text-gray-700 italic mb-4">"Being part of the Culcon group with [Your Name] helped me discover the joy of communicating with people from diverse backgrounds. [Your Name]'s feedback is always clear and incredibly helpful."</p>
+                    <p class="font-semibold text-blue-600">- Ji-hye Lee (University Student)</p>
+                </div>
+                <!-- Testimonial 3 -->
+                <div class="card bg-white p-6 rounded-xl shadow-md border border-gray-200">
+                    <p class="text-gray-700 italic mb-4">"Hearing about [Your Name]'s global tech problem-solving experience inspired me to pursue my dream of becoming a global expert. I gained not just language skills but also valuable career insights."</p>
+                    <p class="font-semibold text-blue-600">- Seonwoo Park (Job Seeker)</p>
+                </div>
+                <!-- Testimonial 4 -->
+                <div class="card bg-white p-6 rounded-xl shadow-md border border-gray-200">
+                    <p class="text-gray-700 italic mb-4">"The pronunciation coaching was truly impressive. [Your Name] precisely identified areas for improvement and guided me through repetitive practice to achieve natural fluency."</p>
+                    <p class="font-semibold text-blue-600">- Yujin Choi (Freelancer)</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-16 bg-white rounded-lg shadow-md mx-4 md:mx-auto max-w-6xl mt-8 px-4 mb-8">
+        <div class="container mx-auto text-center">
+            <h2 class="section-title">Contact Me</h2>
+            <p class="text-xl text-gray-600 mb-8">
+                Feel free to reach out with any questions!
+            </p>
+            <form id="contact-form" class="max-w-xl mx-auto bg-gray-50 p-8 rounded-xl shadow-md border border-gray-200">
+                <div class="mb-6 text-left">
+                    <label for="name" class="block text-gray-700 text-sm font-bold mb-2">Name:</label>
+                    <input type="text" id="name" name="name" required class="shadow appearance-none border rounded w-full py-3 px-4 text-gray-700 leading-tight focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent" placeholder="Enter your name">
+                </div>
+                <div class="mb-6 text-left">
+                    <label for="email" class="block text-gray-700 text-sm font-bold mb-2">Email:</label>
+                    <input type="email" id="email" name="email" required class="shadow appearance-none border rounded w-full py-3 px-4 text-gray-700 leading-tight focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent" placeholder="Enter your email address">
+                </div>
+                <div class="mb-6 text-left">
+                    <label for="message" class="block text-gray-700 text-sm font-bold mb-2">Message:</label>
+                    <textarea id="message" name="message" rows="5" required class="shadow appearance-none border rounded w-full py-3 px-4 text-gray-700 leading-tight focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent" placeholder="Enter your message"></textarea>
+                </div>
+                <div id="form-message" class="hidden mt-4"></div>
+                <button id="submit-btn" type="submit" class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-8 rounded-full text-lg shadow-lg transition duration-300 ease-in-out transform hover:scale-105">
+                    <span id="btn-text">Send Message</span>
+                    <span id="btn-loading" class="hidden">Sending...</span>
+                </button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white p-8 text-center rounded-t-lg">
+        <div class="container mx-auto">
+            <p>&copy; 2025 [Your Name]. All rights reserved.</p>
+            <div class="flex justify-center space-x-4 mt-4">
+                <a href="#" class="text-gray-400 hover:text-white">LinkedIn</a>
+                <a href="#" class="text-gray-400 hover:text-white">Blog</a>
+                <!-- Add more social links if desired -->
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
