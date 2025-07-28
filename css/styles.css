@@ -1,0 +1,87 @@
+/* Custom Styles for 10 Day Language Journey */
+
+/* Custom Font Loading (Optional - if you download fonts locally) */
+/*
+@font-face {
+    font-family: 'Inter';
+    src: url('../assets/fonts/Inter-Regular.woff2') format('woff2'),
+         url('../assets/fonts/Inter-Regular.woff') format('woff');
+    font-weight: 400;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Inter';
+    src: url('../assets/fonts/Inter-Bold.woff2') format('woff2'),
+         url('../assets/fonts/Inter-Bold.woff') format('woff');
+    font-weight: 700;
+    font-display: swap;
+}
+*/
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #f8f8f8; /* Light background */
+    color: #333;
+}
+
+.section-title {
+    position: relative;
+    display: inline-block;
+    margin-bottom: 2rem;
+    font-size: 2.5rem; /* Larger font for titles */
+    font-weight: 700;
+    color: #2c3e50; /* Darker title color */
+}
+
+.section-title::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    width: 60px;
+    height: 4px;
+    background-color: #3498db; /* Accent color underline */
+    border-radius: 2px;
+}
+
+.hero-section {
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://placehold.co/1920x800/2c3e50/ffffff?text=Your+Language+Journey+Starts+Here') no-repeat center center/cover;
+    color: white;
+    padding: 8rem 0;
+    text-align: center;
+}
+
+/* Alternative: If you want to use a local hero background image */
+/*
+.hero-section {
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('../assets/images/hero-background.jpg') no-repeat center center/cover;
+    color: white;
+    padding: 8rem 0;
+    text-align: center;
+}
+*/
+
+.card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+.video-responsive {
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 비율 */
+    height: 0;
+    overflow: hidden;
+}
+
+.video-responsive iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}

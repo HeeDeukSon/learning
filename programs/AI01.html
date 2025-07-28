@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI-Assisted Self-Paced Learning (Self-Training)</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body class="antialiased">
+
+    <!-- Header -->
+    <header class="bg-white shadow-md p-4 sticky top-0 z-50 rounded-b-lg">
+        <nav class="container mx-auto flex justify-between items-center">
+            <a href="../index.html" class="text-2xl font-bold text-blue-700">10 Day Language Journey</a>
+            <div class="hidden md:flex space-x-6">
+                <a href="../index.html#home" class="text-gray-700 hover:text-blue-700 font-medium">Home</a>
+                <a href="AI01.html" class="text-gray-700 hover:text-blue-700 font-medium bg-blue-50 px-3 py-1 rounded">AI-Assisted</a>
+                <a href="Com01.html" class="text-gray-700 hover:text-blue-700 font-medium">Communication</a>
+                <a href="Lec01.html" class="text-gray-700 hover:text-blue-700 font-medium">Lecture</a>
+                <a href="../index.html#contact" class="text-gray-700 hover:text-blue-700 font-medium">Contact</a>
+            </div>
+            <button id="mobile-menu-button" class="md:hidden text-gray-700 focus:outline-none">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
+            </button>
+        </nav>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden mt-4 space-y-2">
+            <a href="../index.html#home" class="block text-gray-700 hover:text-blue-700 font-medium px-4 py-2">Home</a>
+            <a href="AI01.html" class="block text-gray-700 hover:text-blue-700 font-medium px-4 py-2 bg-blue-50 rounded">AI-Assisted</a>
+            <a href="Com01.html" class="block text-gray-700 hover:text-blue-700 font-medium px-4 py-2">Communication</a>
+            <a href="Lec01.html" class="block text-gray-700 hover:text-blue-700 font-medium px-4 py-2">Lecture</a>
+            <a href="../index.html#contact" class="block text-gray-700 hover:text-blue-700 font-medium px-4 py-2">Contact</a>
+        </div>
+    </header>
+
+    <!-- Program Hero Section -->
+    <section class="py-16 bg-gradient-to-br from-blue-50 to-indigo-100 rounded-lg shadow-md mx-4 md:mx-auto max-w-6xl mt-8 px-4">
+        <div class="container mx-auto text-center">
+            <div class="text-6xl mb-6">🗣️</div>
+            <h1 class="text-4xl md:text-5xl font-extrabold mb-4 text-blue-800">
+                Basic Conversation Immersion
+            </h1>
+            <p class="text-xl md:text-2xl mb-8 text-blue-700 max-w-3xl mx-auto">
+                Build fluency through focused expressions and immersive reading practice
+            </p>
+            <div class="bg-white p-6 rounded-xl shadow-lg max-w-4xl mx-auto">
+                <h2 class="text-2xl font-semibold mb-4 text-gray-800">Program Overview</h2>
+                <p class="text-lg text-gray-700 mb-4">
+                    Master essential <span class="font-semibold text-blue-600">phrasal verbs</span> and 
+                    <span class="font-semibold text-blue-600">practical expressions</span> through engaging content 
+                    designed to improve comprehension and boost natural usage.
+                </p>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mt-6">
+                    <div class="bg-blue-50 p-4 rounded-lg">
+                        <h3 class="font-semibold text-blue-700">Module 1</h3>
+                        <p class="text-sm text-blue-600">
+                            <a href="AI01.html#main-content" class="text-blue-600 hover:underline">Creating some conversations with AI</a>
+                        </p>
+                    </div>
+                    <div class="bg-blue-50 p-4 rounded-lg">
+                        <h3 class="font-semibold text-blue-700">Module 2</h3>
+                        <p class="text-sm text-blue-600">
+                            <a href="AI02.html#main-content" class="text-blue-600 hover:underline">Creating some technical conversations - Google Studio AI</a>
+                        </p>
+                    </div>
+                    <div class="bg-blue-50 p-4 rounded-lg">
+                        <h3 class="font-semibold text-blue-700">Module 3</h3>
+                        <p class="text-sm text-blue-600">
+                            <a href="AI03.html#main-content" class="text-blue-600 hover:underline">Creating interviews -Gemini + NotebookLM </a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Content Section -->
+    <section id="main-content" class="py-16 bg-white rounded-lg shadow-md mx-4 md:mx-auto max-w-6xl mt-8 px-4">
+        <div class="container mx-auto">
+            <h2 class="section-title text-center mb-12">Conversate with AI</h2>
+            <p class="text-lg text-gray-600 text-center mb-12 max-w-3xl mx-auto">
+                Practice natural conversation patterns with AI through structured dialogues. 
+                Learn to manage conversations, express uncertainty, make requests, and handle real-world communication scenarios.
+            </p>
+
+            <!-- Conversation Scenarios -->
+            <div class="space-y-8">
+                
+                <!-- Scenario 1 -->
+                <div class="bg-gray-50 p-6 rounded-xl border border-gray-200">
+                        <div class="flex justify-between items-center mb-4">
+                        <h3 class="text-xl font-semibold text-blue-700">1. Conversation Management + Making Requests</h3>
+                                <audio controls class="h-8">
+                                <source src="../assets/audio/AI_Mod1_01.opus" type="audio/wav">
+                            Your browser does not support the audio element.
+                            </audio>
+                        </div>
+                    <div class="space-y-3">
+                        <div class="bg-blue-100 p-3 rounded-lg">
+                            <p class="text-blue-800"><strong>You:</strong> I have a quick question about my presentation.</p>
+                        </div>
+                        <div class="bg-gray-100 p-3 rounded-lg">
+                            <p class="text-gray-800"><strong>AI:</strong> Sure! What's your question?</p>
+                        </div>
+                        <div class="bg-blue-100 p-3 rounded-lg">
+                            <p class="text-blue-800"><strong>You:</strong> Actually, never mind that. Can you help me with something else instead?</p>
+                        </div>
+                        <div class="bg-gray-100 p-3 rounded-lg">
+                            <p class="text-gray-800"><strong>AI:</strong> Of course! What do you need help with?</p>
+                        </div>
+                        <div class="bg-blue-100 p-3 rounded-lg">
+                            <p class="text-blue-800"><strong>You:</strong> Do you mind if we work on my writing skills?</p>
+                        </div>
+                        <div class="bg-gray-100 p-3 rounded-lg">
+                            <p class="text-gray-800"><strong>AI:</strong> Not at all! I'd be happy to help with your writing.</p>
+                        </div>
+                        <div class="bg-blue-100 p-3 rounded-lg">
+                            <p class="text-blue-800"><strong>You:</strong> That'd be great, thanks!</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Scenario 2 -->
+                <div class="bg-gray-50 p-6 rounded-xl border border-gray-200">
+                    <div class="flex justify-between items-center mb-4">
+                        <h3 class="text-xl font-semibold text-blue-700">2. Expressing Uncertainty + Giving Feedback</h3>
+                        <audio controls class="h-8">
+                            <source src="../assets/audio/AI_Mod1_02.opus" type="audio/wav">
+                            Your browser does not support the audio element.
+                        </audio>
+                    </div>
+                    <div class="space-y-3">
+                        <div class="bg-blue-100 p-3 rounded-lg">
+                            <p class="text-blue-800"><strong>You:</strong> I'm not sure if this answer is correct.</p>
+                        </div>
+                        <div class="bg-gray-100 p-3 rounded-lg">
+                            <p class="text-gray-800"><strong>AI:</strong> Let me check your work. What makes you think it might be wrong?</p>
+                        </div>
+                        <div class="bg-blue-100 p-3 rounded-lg">
+                            <p class="text-blue-800"><strong>You:</strong> I think I made a mistake somewhere, but that sounds right to me.</p>
+                        </div>
+                        <div class="bg-gray-100 p-3 rounded-lg">
+                            <p class="text-gray-800"><strong>AI:</strong> Your logic is actually quite good. Let's double-check the calculations.</p>
+                        </div>
+                        <div class="bg-blue-100 p-3 rounded-lg">
+                            <p class="text-blue-800"><strong>You:</strong> That explains why I was getting confused! This approach sounds much better.</p>
+                        </div>
+                        <div class="bg-gray-100 p-3 rounded-lg">
+                            <p class="text-gray-800"><strong>AI:</strong> I'm glad that cleared things up for you.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Scenario 3 -->
+                <div class="bg-gray-50 p-6 rounded-xl border border-gray-200">
+                    <div class="flex justify-between items-center mb-4">
+                        <h3 class="text-xl font-semibold text-blue-700">3. Describing Problems + Time & Planning</h3>
+                        <audio controls class="h-8">
+                            <source src="../assets/audio/AI_Mod1_03.opus" type="audio/wav">
+                            Your browser does not support the audio element.
+                        </audio>
+                    </div>
+                    <div class="space-y-3">
+                        <div class="bg-blue-100 p-3 rounded-lg">
+                            <p class="text-blue-800"><strong>You:</strong> I'm having trouble finishing my homework on time.</p>
+                        </div>
+                        <div class="bg-gray-100 p-3 rounded-lg">
+                            <p class="text-gray-800"><strong>AI:</strong> What specific part is taking you the longest?</p>
+                        </div>
+                        <div class="bg-blue-100 p-3 rounded-lg">
+                            <p class="text-blue-800"><strong>You:</strong> I keep getting stuck on these math problems, and I need to finish this by tomorrow.</p>
+                        </div>
+                        <div class="bg-gray-100 p-3 rounded-lg">
+                            <p class="text-gray-800"><strong>AI:</strong> How long does it usually take you to solve one problem?</p>
+                        </div>
+                        <div class="bg-blue-100 p-3 rounded-lg">
+                            <p class="text-blue-800"><strong>You:</strong> It takes me about 10 minutes per problem, but I have 20 problems left.</p>
+                        </div>
+                        <div class="bg-gray-100 p-3 rounded-lg">
+                            <p class="text-gray-800"><strong>AI:</strong> Let's focus on the most efficient solving method to save time.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Scenario 4 -->
+                <div class="bg-gray-50 p-6 rounded-xl border border-gray-200">
+                    <div class="flex justify-between items-center mb-4">
+                        <h3 class="text-xl font-semibold text-blue-700">4. Making Requests + Expressing Preferences</h3>
+                        <audio controls class="h-8">
+                            <source src="../assets/audio/AI_Mod1_04.opus" type="audio/wav">
+                            Your browser does not support the audio element.
+                        </audio>
+                    </div>
+                    <div class="space-y-3">
+                        <div class="bg-blue-100 p-3 rounded-lg">
+                            <p class="text-blue-800"><strong>You:</strong> Can you help me practice English conversation, please?</p>
+                        </div>
+                        <div class="bg-gray-100 p-3 rounded-lg">
+                            <p class="text-gray-800"><strong>AI:</strong> Absolutely! What would you like to practice?</p>
+                        </div>
+                        <div class="bg-blue-100 p-3 rounded-lg">
+                            <p class="text-blue-800"><strong>You:</strong> I'd prefer to work on everyday situations rather than formal language.</p>
+                        </div>
+                        <div class="bg-gray-100 p-3 rounded-lg">
+                            <p class="text-gray-800"><strong>AI:</strong> That sounds like a practical approach. Any specific situations you have in mind?</p>
+                        </div>
+                        <div class="bg-blue-100 p-3 rounded-lg">
+                            <p class="text-blue-800"><strong>You:</strong> I'm trying to get better at small talk with coworkers.</p>
+                        </div>
+                        <div class="bg-gray-100 p-3 rounded-lg">
+                            <p class="text-gray-800"><strong>AI:</strong> Perfect! Let's practice some common workplace conversations.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Scenario 5 -->
+                <div class="bg-gray-50 p-6 rounded-xl border border-gray-200">
+                    <div class="flex justify-between items-center mb-4">
+                        <h3 class="text-xl font-semibold text-blue-700">5. Conversation Management + Describing Problems</h3>
+                        <audio controls class="h-8">
+                            <source src="../assets/audio/AI_Mod1_05.opus" type="audio/wav">
+                            Your browser does not support the audio element.
+                        </audio>
+                    </div>
+                    <div class="space-y-3">
+                        <div class="bg-blue-100 p-3 rounded-lg">
+                            <p class="text-blue-800"><strong>You:</strong> I have a quick question, but it's kind of complicated.</p>
+                        </div>
+                        <div class="bg-gray-100 p-3 rounded-lg">
+                            <p class="text-gray-800"><strong>AI:</strong> No problem! Take your time explaining it.</p>
+                        </div>
+                        <div class="bg-blue-100 p-3 rounded-lg">
+                            <p class="text-blue-800"><strong>You:</strong> Actually, let me start over. I'm having trouble with my computer.</p>
+                        </div>
+                        <div class="bg-gray-100 p-3 rounded-lg">
+                            <p class="text-gray-800"><strong>AI:</strong> Okay, what's going on with your computer?</p>
+                        </div>
+                        <div class="bg-blue-100 p-3 rounded-lg">
+                            <p class="text-blue-800"><strong>You:</strong> It keeps making a weird sound when I start it up.</p>
+                        </div>
+                        <div class="bg-gray-100 p-3 rounded-lg">
+                            <p class="text-gray-800"><strong>AI:</strong> That could be several things. When did this problem start?</p>
+                        </div>
+                        <div class="bg-blue-100 p-3 rounded-lg">
+                            <p class="text-blue-800"><strong>You:</strong> Never mind the sound - I think the real issue is that it's running really slowly.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Scenario 6 -->
+                <div class="bg-gray-50 p-6 rounded-xl border border-gray-200">
+                    <div class="flex justify-between items-center mb-4">
+                        <h3 class="text-xl font-semibold text-blue-700">6. Expressing Uncertainty + Time & Planning</h3>
+                        <audio controls class="h-8">
+                            <source src="../assets/audio/AI_Mod1_06.opus" type="audio/wav">
+                            Your browser does not support the audio element.
+                        </audio>
+                    </div>
+                    <div class="space-y-3">
+                        <div class="bg-blue-100 p-3 rounded-lg">
+                            <p class="text-blue-800"><strong>You:</strong> I'm not sure if I can finish this project in time.</p>
+                        </div>
+                        <div class="bg-gray-100 p-3 rounded-lg">
+                            <p class="text-gray-800"><strong>AI:</strong> When is your deadline?</p>
+                        </div>
+                        <div class="bg-blue-100 p-3 rounded-lg">
+                            <p class="text-blue-800"><strong>You:</strong> I need to get this done by Friday, but I think I'm behind schedule.</p>
+                        </div>
+                        <div class="bg-gray-100 p-3 rounded-lg">
+                            <p class="text-gray-800"><strong>AI:</strong> How much work do you have left to do?</p>
+                        </div>
+                        <div class="bg-blue-100 p-3 rounded-lg">
+                            <p class="text-blue-800"><strong>You:</strong> I'm not sure exactly, but it feels like a lot. How long does it usually take to write a 10-page report?</p>
+                        </div>
+                        <div class="bg-gray-100 p-3 rounded-lg">
+                            <p class="text-gray-800"><strong>AI:</strong> For most people, about 6-8 hours of focused work. What makes you think you're behind?</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Scenario 7 -->
+                <div class="bg-gray-50 p-6 rounded-xl border border-gray-200">
+                    <div class="flex justify-between items-center mb-4">
+                        <h3 class="text-xl font-semibold text-blue-700">7. Giving Feedback + Making Requests</h3>
+                        <audio controls class="h-8">
+                            <source src="../assets/audio/AI_Mod1_07.opus" type="audio/wav">
+                            Your browser does not support the audio element.
+                        </audio>
+                    </div>
+                    <div class="space-y-3">
+                        <div class="bg-blue-100 p-3 rounded-lg">
+                            <p class="text-blue-800"><strong>You:</strong> That sounds like exactly what I need!</p>
+                        </div>
+                        <div class="bg-gray-100 p-3 rounded-lg">
+                            <p class="text-gray-800"><strong>AI:</strong> Great! I'm glad this approach appeals to you.</p>
+                        </div>
+                        <div class="bg-blue-100 p-3 rounded-lg">
+                            <p class="text-blue-800"><strong>You:</strong> Can you show me more examples like that one, please?</p>
+                        </div>
+                        <div class="bg-gray-100 p-3 rounded-lg">
+                            <p class="text-gray-800"><strong>AI:</strong> Sure! Here are some similar examples.</p>
+                        </div>
+                        <div class="bg-blue-100 p-3 rounded-lg">
+                            <p class="text-blue-800"><strong>You:</strong> That'd be perfect. Actually, do you mind if we try a different type of example?</p>
+                        </div>
+                        <div class="bg-gray-100 p-3 rounded-lg">
+                            <p class="text-gray-800"><strong>AI:</strong> Not at all! What kind would you prefer?</p>
+                        </div>
+                        <div class="bg-blue-100 p-3 rounded-lg">
+                            <p class="text-blue-800"><strong>You:</strong> I think practical examples would work better for me.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Scenario 8 -->
+                <div class="bg-gray-50 p-6 rounded-xl border border-gray-200">
+                    <div class="flex justify-between items-center mb-4">
+                        <h3 class="text-xl font-semibold text-blue-700">8. Multiple Categories Combined (Advanced)</h3>
+                        <audio controls class="h-8">
+                            <source src="../assets/audio/AI_Mod1_08.opus" type="audio/wav">
+                            Your browser does not support the audio element.
+                        </audio>
+                    </div>
+                    <div class="space-y-3">
+                        <div class="bg-blue-100 p-3 rounded-lg">
+                            <p class="text-blue-800"><strong>You:</strong> I have a quick question about my presentation, but I'm not sure if this is the right approach.</p>
+                        </div>
+                        <div class="bg-gray-100 p-3 rounded-lg">
+                            <p class="text-gray-800"><strong>AI:</strong> What's your question about the presentation?</p>
+                        </div>
+                        <div class="bg-blue-100 p-3 rounded-lg">
+                            <p class="text-blue-800"><strong>You:</strong> I'm trying to make it more engaging, but I keep having trouble with the opening.</p>
+                        </div>
+                        <div class="bg-gray-100 p-3 rounded-lg">
+                            <p class="text-gray-800"><strong>AI:</strong> What makes you think the opening isn't working?</p>
+                        </div>
+                        <div class="bg-blue-100 p-3 rounded-lg">
+                            <p class="text-blue-800"><strong>You:</strong> Every time I practice it, it sounds boring to me. How long should a good opening take?</p>
+                        </div>
+                        <div class="bg-gray-100 p-3 rounded-lg">
+                            <p class="text-gray-800"><strong>AI:</strong> Usually about 30 seconds to a minute. What kind of presentation is this for?</p>
+                        </div>
+                        <div class="bg-blue-100 p-3 rounded-lg">
+                            <p class="text-blue-800"><strong>You:</strong> It's for work, actually. Can you help me practice it? That'd be great.</p>
+                        </div>
+                        <div class="bg-gray-100 p-3 rounded-lg">
+                            <p class="text-gray-800"><strong>AI:</strong> Absolutely. Let's work on making your opening more engaging.</p>
+                        </div>
+                        <div class="bg-blue-100 p-3 rounded-lg">
+                            <p class="text-blue-800"><strong>You:</strong> I'd prefer to start with something simple and build up from there.</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Practice Section -->
+            <div class="mt-12 p-6 bg-blue-50 rounded-xl border border-blue-200">
+                <h3 class="text-xl font-semibold mb-4 text-blue-700">How to Practice</h3>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <div>
+                        <h4 class="font-semibold text-gray-800 mb-2">📝 Study Phase</h4>
+                        <ul class="text-gray-700 space-y-1">
+                            <li>• Read each conversation scenario</li>
+                            <li>• Notice the natural flow and transitions</li>
+                            <li>• Identify key phrases and expressions</li>
+                            <li>• Understand the context of each exchange</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h4 class="font-semibold text-gray-800 mb-2">🗣️ Practice Phase</h4>
+                        <ul class="text-gray-700 space-y-1">
+                            <li>• Practice with NotebookLM or ChatGPT</li>
+                            <li>• Role-play similar situations</li>
+                            <li>• Mix and match different patterns</li>
+                            <li>• Create your own variations</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white p-8 text-center rounded-t-lg">
+        <div class="container mx-auto">
+            <p>&copy; 2025 [Sohn HeeDeuk]. All rights reserved.</p>
+            <div class="flex justify-center space-x-4 mt-4">
+                <a href="../index.html" class="text-gray-400 hover:text-white">← Back to Home</a>
+                <a href="../index.html#programs" class="text-gray-400 hover:text-white">All Programs</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../js/script.js"></script>
+</body>
+</html>

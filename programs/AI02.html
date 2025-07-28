@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI-Assisted Self-Paced Learning (Self-Training)</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body class="antialiased">
+
+    <!-- Header -->
+    <header class="bg-white shadow-md p-4 sticky top-0 z-50 rounded-b-lg">
+        <nav class="container mx-auto flex justify-between items-center">
+            <a href="../index.html" class="text-2xl font-bold text-blue-700">10 Day Language Journey</a>
+            <div class="hidden md:flex space-x-6">
+                <a href="../index.html#home" class="text-gray-700 hover:text-blue-700 font-medium">Home</a>
+                <a href="AI01.html" class="text-gray-700 hover:text-blue-700 font-medium bg-blue-50 px-3 py-1 rounded">AI-Assisted</a>
+                <a href="Com01.html" class="text-gray-700 hover:text-blue-700 font-medium">Communication</a>
+                <a href="Lec01.html" class="text-gray-700 hover:text-blue-700 font-medium">Lecture</a>
+                <a href="../index.html#contact" class="text-gray-700 hover:text-blue-700 font-medium">Contact</a>
+            </div>
+            <button id="mobile-menu-button" class="md:hidden text-gray-700 focus:outline-none">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
+            </button>
+        </nav>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden mt-4 space-y-2">
+            <a href="../index.html#home" class="block text-gray-700 hover:text-blue-700 font-medium px-4 py-2">Home</a>
+            <a href="AI01.html" class="block text-gray-700 hover:text-blue-700 font-medium px-4 py-2 bg-blue-50 rounded">AI-Assisted</a>
+            <a href="Com01.html" class="block text-gray-700 hover:text-blue-700 font-medium px-4 py-2">Communication</a>
+            <a href="Lec01.html" class="block text-gray-700 hover:text-blue-700 font-medium px-4 py-2">Lecture</a>
+            <a href="../index.html#contact" class="block text-gray-700 hover:text-blue-700 font-medium px-4 py-2">Contact</a>
+        </div>
+    </header>
+
+    <!-- Program Hero Section -->
+    <section class="py-16 bg-gradient-to-br from-blue-50 to-indigo-100 rounded-lg shadow-md mx-4 md:mx-auto max-w-6xl mt-8 px-4">
+        <div class="container mx-auto text-center">
+            <div class="text-6xl mb-6">🗣️</div>
+            <h1 class="text-4xl md:text-5xl font-extrabold mb-4 text-blue-800">
+                Basic Conversation Immersion
+            </h1>
+            <p class="text-xl md:text-2xl mb-8 text-blue-700 max-w-3xl mx-auto">
+                Build fluency through focused expressions and immersive reading practice
+            </p>
+            <div class="bg-white p-6 rounded-xl shadow-lg max-w-4xl mx-auto">
+                <h2 class="text-2xl font-semibold mb-4 text-gray-800">Program Overview</h2>
+                <p class="text-lg text-gray-700 mb-4">
+                    Master essential <span class="font-semibold text-blue-600">phrasal verbs</span> and 
+                    <span class="font-semibold text-blue-600">practical expressions</span> through engaging content 
+                    designed to improve comprehension and boost natural usage.
+                </p>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mt-6">
+                    <div class="bg-blue-50 p-4 rounded-lg">
+                        <h3 class="font-semibold text-blue-700">Module 1</h3>
+                        <p class="text-sm text-blue-600">
+                            <a href="AI01.html#main-content" class="text-blue-600 hover:underline">Creating some conversations with AI</a>
+                        </p>
+                    </div>
+                    <div class="bg-blue-50 p-4 rounded-lg">
+                        <h3 class="font-semibold text-blue-700">Module 2</h3>
+                        <p class="text-sm text-blue-600">
+                            <a href="AI02.html#main-content" class="text-blue-600 hover:underline">Creating some technical conversations - Google Studio AI</a>
+                        </p>
+                    </div>
+                    <div class="bg-blue-50 p-4 rounded-lg">
+                        <h3 class="font-semibold text-blue-700">Module 3</h3>
+                        <p class="text-sm text-blue-600">
+                            <a href="AI03.html#main-content" class="text-blue-600 hover:underline">Creating interviews -Google Studio AI + NotebookLM </a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Content Section -->
+    <section id="main-content" class="py-16 bg-white rounded-lg shadow-md mx-4 md:mx-auto max-w-6xl mt-8 px-4">
+        <div class="container mx-auto">
+            <h2 class="section-title text-center mb-12">Leveraging AI Tools</h2>
+            
+            <div class="space-y-8">
+                <!-- Section 1: Designing a Prompt -->
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h3 class="text-2xl font-bold text-blue-700 mb-4">1. Designing a Prompt</h3>
+                    <div class="prose max-w-none">
+                        <p class="mb-4">Fill in the purple blanks to specify your requirements.</p>
+                        <div class="bg-gray-50 p-4 rounded-md">
+                            <p class="font-semibold mb-4">Create a technical conversation between <span class="text-purple-600 font-semibold">[NUMBER]</span> experts discussing <span class="text-purple-600 font-semibold">[SPECIFIC TECHNICAL ISSUE]</span>.</p>
+                            <p class="font-semibold">Required inputs:</p>
+                            <ul class="list-disc pl-6 mb-4">
+                                <li>Participants: <span class="text-purple-600 font-semibold">[Role 1]</span> and <span class="text-purple-600 font-semibold">[Role 2]</span> (e.g., "Maintenance Engineer and Production Manager")</li>
+                                <li>Problem: <span class="text-purple-600 font-semibold">[One sentence describing the technical challenge]</span></li>
+                                <li>Goal: <span class="text-purple-600 font-semibold">[What they need to decide or solve]</span></li>
+                            </ul>
+                            <p class="font-semibold mb-2">Generate a 5-7 minute dialogue that shows:</p>
+                            <ol class="list-decimal pl-6 mb-4">
+                                <li>Clear technical explanations</li>
+                                <li>Data-based opinions</li>
+                                <li>Solution evaluation</li>
+                                <li>Decision-making process</li>
+                            </ol>
+                            <p class="font-semibold mb-2">Example input:</p>
+                            <ul class="list-disc pl-6 space-y-2 mb-4">
+                                <li>Participants: Software Engineer and DevOps Engineer</li>
+                                <li>Problem: Application deployment takes 3 hours and fails 30% of the time</li>
+                                <li>Goal: Choose between automated CI/CD pipeline or manual process improvements</li>
+                            </ul>
+                            <p class="font-semibold mb-2">Expected Output:</p>
+                            <p>Natural conversation with realistic technical discussion, disagreement/agreement, and clear conclusion to make the audio smoothly for the intermediate learners. The dialogue should include:</p>
+                            <ul class="list-disc pl-6 space-y-2 mt-2">
+                                <li>Technical terms and jargon appropriate to the field</li>
+                                <li>Data-driven discussion points</li>
+                                <li>Clear problem-solving process</li>
+                                <li>Logical conclusion based on the discussion</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Section 2: Actual Prompt -->
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h3 class="text-2xl font-bold text-blue-700 mb-4">2. Actual Prompt (Technical Trainer)</h3>
+                    <p class="mb-4">Put the below prompt into the Gemini AI. (<a href="https://gemini.google.com/" class="text-blue-600 hover:underline" target="_blank">https://gemini.google.com/</a>)</p>
+                    <div class="bg-gray-50 p-4 rounded-md">
+                        <p class="font-semibold mb-4">Create a technical conversation between 20 experts discussing a new car's introduction.</p>
+                        <p class="font-semibold">Required inputs:</p>
+                        <ul class="list-disc pl-6 space-y-2 mb-4">
+                            <li>Participants: Main trainer and Regional trainers (e.g., "Maintenance Engineer and Production Manager")</li>
+                            <li>Problem: Launching a new car in the market</li>
+                            <li>Goal: Understanding features and functions to clarify the communication in the future</li>
+                        </ul>
+                        <p class="font-semibold mb-2">Generate a 3-4 minute dialogue that shows:</p>
+                        <ol class="list-decimal pl-6 mb-4">
+                            <li>Clear technical explanations</li>
+                            <li>Data-based opinions</li>
+                            <li>Solution evaluation</li>
+                            <li>Decision-making process</li>
+                        </ol>
+                        <p class="font-semibold mb-2">Example input:</p>
+                        <ul class="list-disc pl-6 space-y-2 mb-4">
+                            <li>Participants: Software Engineer and DevOps Engineer</li>
+                            <li>Problem: Application deployment takes 3 hours and fails 30% of the time</li>
+                            <li>Goal: Choose between automated CI/CD pipeline or manual process improvements</li>
+                        </ul>
+                        <p class="font-semibold mb-2">Output:</p>
+                        <p>Natural conversation with realistic technical discussion, disagreement/agreement, and clear conclusion to make the audio smoothly for the intermedia learners, I'd like to point out two persons to speak in the meeting. Natural conversation with realistic technical discussion, disagreement/agreement, and clear conclusion.</p>
+                    </div>
+                </div>
+
+                <!-- Section 3: Actual Result -->
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <div class="flex justify-between items-center mb-4">
+                        <h3 class="text-2xl font-bold text-blue-700 mb-4">3. Actual Result (Technical Trainer)</h3>
+                        <audio controls class="h-8">
+                            <source src="../assets/audio/AI_Mod2_02.opus" type="audio/wav">
+                            Your browser does not support the audio element.
+                        </audio>
+                    </div>
+                    <div class="bg-gray-50 p-4 rounded-md prose max-w-none">
+                        <p class="italic text-gray-600 mb-4">(The scene opens in a state-of-the-art training room. Dr. Aris Thorne, Lead Product Trainer, Global, stands at a large interactive display, an image of the sleek new "Vortex EV" prominently featured. Across from him, Maria Rodriguez, Regional Trainer for the Americas, is keenly focused. The other regional trainers and guest experts are also present, though for this particular segment, the dialogue highlights Dr. Thorne and Maria.)</p>
+                        
+                            <div class="bg-gray-50 p-4 rounded-md prose max-w-none">
+                                <div class="mt-4 space-y-4">
+                                    <h4 class="text-xl font-bold text-blue-800">Technical Dialogue: Terra EV Launch Training</h4>
+
+                                    <p><strong>Dr. Aris Thorne:</strong> "Good morning, Maria, and everyone else. Thanks for joining this critical session on the Terra EV. As you all know, this vehicle represents a significant stride for us, particularly with its NextGen Solid-State Battery, the advanced "TerraSense" Lidar-based ADAS, and our redesigned Intuitive AI Infotainment system. Our objective today is to dissect the technical functionalities to empower you for precise regional training and, crucially, for accurate customer communication."</p>
+
+                                    <p><strong>Maria Rodriguez:</strong> "Good morning, Aris. Let's jump right into the NextGen Solid-State Battery. My team in the Americas has been getting a lot of inquiries about its real-world performance compared to traditional lithium-ion. Our internal prototype data from controlled environments shows a remarkable 10-80% charge in under 12 minutes on our new TerraCharge stations. What's the projected performance in varied real-world conditions, especially regarding cycle life and energy density stability over, say, 150,000 kilometers?"</p>
+
+                                    <p><strong>Dr. Aris Thorne:</strong> "Excellent point, Maria. The solid-state chemistry offers inherent advantages. For cycle life, our accelerated testing simulates 150,000 kilometers, equivalent to approximately 1,500 full charge cycles, with less than 5% degradation in usable capacity. This is a significant improvement over the 10-15% we'd typically see with current lithium-ion packs over that same mileage. The solid electrolyte minimizes dendrite formation, which is a primary cause of capacity fade and potential thermal runaway in liquid electrolyte batteries. In terms of energy density, we're achieving over 450 Wh/kg on a pack level, giving the Terra EV a real-world estimated range of 650 kilometers on a single charge under mixed driving conditions. We believe this extended range and durability will directly address range anxiety concerns in the market."</p>
+
+                                    <p><strong>Maria Rodriguez:</strong> "That 5% degradation figure is compelling, Aris. It directly supports a stronger long-term value proposition for our customers. How does the thermal management strategy for these solid-state cells differ? Are we still dealing with active cooling circuits, or does the solid electrolyte simplify that?"</p>
+
+                                    <p><strong>Dr. Aris Thorne:</strong> "The thermal management is indeed simplified, Maria, but not eliminated. While solid-state cells are inherently more thermally stable and less prone to runaway, we still utilize a passive thermal equalization system integrated directly into the battery module structure. This system uses advanced composite materials with high thermal conductivity to distribute heat uniformly across the cell array during both charging and discharging. We also have a minor active cooling loop, but it's primarily for extreme fast-charging events in very hot climates, ensuring the cell temperature remains below 60°C. This passive-dominant approach significantly reduces parasitic drain on the battery, contributing to the overall efficiency and range."</p>
+
+                                    <p><strong>Maria Rodriguez:</strong> "Interesting. So, the active cooling is more of a failsafe or performance enhancer for specific scenarios, not a constant requirement like with liquid-cooled packs. This will resonate well in regions where maintenance simplicity is a priority. Now, moving to the TerraSense ADAS. The Lidar integration is a significant upgrade. Our field service teams need to understand the calibration requirements. What's the procedure, and what's the expected service interval for recalibration of the Lidar units?"</p>
+
+                                    <p><strong>Dr. Aris Thorne:</strong> "Good question, Maria, and one that impacts our service network directly. The TerraSense system utilizes three primary Lidar units – one front-facing, and two side-mounted – in conjunction with redundant radar and camera systems. For calibration, we've developed a fully automated, over-the-air (OTA) calibration routine that runs during scheduled maintenance. It uses cloud-based mapping data and the vehicle's internal inertial measurement units (IMUs) to verify and adjust sensor alignment. Our data from 50,000 fleet kilometers shows that manual recalibration is typically not required before 100,000 kilometers or five years, unless there's been a physical impact to the sensor housing, such as a fender bender. In those cases, a standard diagnostic tool in the service center guides the technician through a straightforward re-alignment process, which takes about 30 minutes."</p>
+
+                                    <p><strong>Maria Rodriguez:</strong> "An OTA calibration capability is fantastic. That significantly reduces the service burden and provides peace of mind for the customer. It also means our regional service centers need robust, secure connectivity. Are we implementing a dedicated 5G module for the OTA updates and telematics for the Terra EV, or is it leveraging existing cellular infrastructure? This impacts our data plan costs and connectivity reliability in more remote areas."</p>
+
+                                    <p><strong>Dr. Aris Thorne:</strong> "We're going with a dedicated, embedded 5G module with dual-SIM redundancy for maximum reliability. Our connectivity trials showed that relying solely on external cellular networks could lead to dropped updates or limited telematics data in areas with weak 5G coverage, which can be an issue in some rural parts of the Americas. The dual-SIM setup automatically switches to the strongest available network, minimizing disruption. While it adds a minor upfront cost, the long-term benefits in terms of robust OTA updates, real-time diagnostic data transfer, and seamless in-car AI infotainment connectivity far outweigh it. It's a strategic decision to ensure a premium user experience and reliable vehicle diagnostics."</p>
+
+                                    <p><strong>Maria Rodriguez:</strong> "That's a crucial decision, Aris. The dual-SIM 5G module addresses a key reliability concern for diverse geographical markets. It gives us a strong talking point regarding connectivity for both customer support and future feature enhancements. So, to summarize our discussion for the team: the NextGen Solid-State Battery offers significant gains in cycle life and energy density with simplified passive thermal management. The TerraSense ADAS has a mostly automated, OTA Lidar calibration process, with manual intervention only for physical damage, simplifying service. And finally, the embedded dual-SIM 5G module ensures robust connectivity for all advanced features and OTA updates. Are we aligned on these core messages for our regional training materials?"</p>
+
+                                    <p><strong>Dr. Aris Thorne:</strong> "Absolutely, Maria. Perfectly articulated. This clarity is exactly what we need for a smooth market introduction. Thank you for your incisive questions."</p>
+
+                                    <p class="italic text-gray-600">(Maria nods, looking satisfied. The meeting continues, but this segment demonstrates a clear technical exchange and resolution for communication strategies for intermediate learners.)</p>
+                                </div>
+                            </div>
+                    </div>
+                </div>
+
+                <!-- Section 4: Generating Voice -->
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h3 class="text-2xl font-bold text-blue-700 mb-4">4. Generating Voice</h3>
+                    <p>Visit <a href="https://aistudio.google.com/generate-speech" class="text-blue-600 hover:underline" target="_blank">https://aistudio.google.com/generate-speech</a></p>
+                    <p class="mt-2">Put the above generated script into the script builder step by step</p>
+                    <div class="mt-4">
+                        <img src="../assets/images/script-builder.png" alt="Script Builder Interface" class="rounded-lg shadow-md">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Practice Section -->
+            <div class="mt-12 p-6 bg-blue-50 rounded-xl border border-blue-200">
+                <h3 class="text-xl font-semibold mb-4 text-blue-700">How to Practice</h3>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <div>
+                        <h4 class="font-semibold text-gray-800 mb-2">📝 Study Phase</h4>
+                        <ul class="text-gray-700 space-y-1">
+                            <li>• Read each conversation scenario</li>
+                            <li>• Notice the natural flow and transitions</li>
+                            <li>• Identify key phrases and expressions</li>
+                            <li>• Understand the context of each exchange</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h4 class="font-semibold text-gray-800 mb-2">🗣️ Practice Phase</h4>
+                        <ul class="text-gray-700 space-y-1">
+                            <li>• Practice with AI tools in a daily life</li>
+                            <li>• Role-play similar situations</li>
+                            <li>• Mix and match different patterns</li>
+                            <li>• Create your own variations</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white p-8 text-center rounded-t-lg">
+        <div class="container mx-auto">
+            <p>&copy; 2025 [Sohn HeeDeuk]. All rights reserved.</p>
+            <div class="flex justify-center space-x-4 mt-4">
+                <a href="../index.html" class="text-gray-400 hover:text-white">← Back to Home</a>
+                <a href="../index.html#programs" class="text-gray-400 hover:text-white">All Programs</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../js/script.js"></script>
+</body>
+</html>
